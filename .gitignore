@@ -1,0 +1,7 @@
+/shelf/
+/workspace.xml
+.gradle
+.idea
+.classpath
+.project
+out/

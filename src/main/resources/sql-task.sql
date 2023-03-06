@@ -62,7 +62,7 @@ WHERE
 		FROM airports_data ad
 		WHERE ad.city @> '{"ru":"Москва"}'
 	)
-	AND f.status LIKE 'Scheduled'
+	AND (f.status LIKE 'Scheduled' OR f.status LIKE 'On Time' OR f.status LIKE 'Delayed')
 ORDER BY
 	f.scheduled_departure
 LIMIT 1;
